@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE WARDROBE</title>
+    <!--This is a website for a clothing brand THE WARDROBE-->
+    <style>
+        /*Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Adding Header and Navigation Bar */
+        header {
+            background-color: rgb(86, 56, 56);
+            color: beige;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: disc;
+            padding: 5;
+            margin: 5;
+            display: flex;
+            justify-content: center;
+            background-color:white;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(86, 56, 56);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('media/heroimg.jpg');
+            background-size: cover;
+            color:beige;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3cap;
+            margin-bottom: 10px;
+        }
+
+        /* About Us Section */
+        .about, .services, .gallery, .features, .testimonials, .contact {
+            padding: 50px 20px;
+            text-align: justify;
+            background-color: beige;
+        }
+        /* Services Section Table */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid lightpink;
+            text-align: justify;
+        }
+        th {
+            background-color: rgb(86, 56, 56);
+            color:beige;
+        }
+        /* Image Gallery */
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        /* Footer */
+        footer {
+            background-color: rgb(86, 56, 56);
+            color:beige;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>THE WARDROBE</h1>
+        <p>"Your Fashion, Our Passion"</p>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to THE WARDROBE</h1>
+        <p>Your one-stop destination for trendy and quality clothing!</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p><strong>The Wardrobe</strong> was founded with a mission to bring affordable and stylish clothing to all. Our goal is to provide high-quality apparel that <em>makes a statement</em>.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <table>
+            <tr>
+                <th>Service Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Personal Styling</td>
+                <td>Get customized fashion advice from our experts</td>
+                <td>₹2000 per clothing</td>
+            </tr>
+            <tr>
+                <td>Alterations</td>
+                <td>Perfect fit guaranteed with our alteration services</td>
+                <td>₹1000</td>
+            </tr>
+            <tr>
+                <td>Custom Orders</td>
+                <td>Design your own apparel with us</td>
+                <td>₹4000+</td>
+            </tr>
+        </table>
+    </section>
+
+ <!-- Image Gallery -->
+<section class="gallery">
+    <h2><u>Our Collection:</u></h2>
+    <img src="media/denimjacket.jpeg" alt="Denim Jacket">
+    <img src="media/sweatshirt.jpeg" alt="Sweatshirt">
+    <img src="media/dress.jpeg" alt="Dress">
+    <img src="media/pants.jpeg" alt="Pants">
+    <img src="media/coat.jpeg" alt="Coat">
+    <img src="media/shirt.jpeg" alt="Shirt">
+</section>
+
+
+    <!-- Features List -->
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <ul style="list-style-type:square">
+            <li>Free Consultations</li>
+            <li>24/7 Customer Support</li>
+            <li>Custom Solutions for Every Style</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Customer Testimonials:</h2><ul style="list-style-type:initial">
+        <blockquote>
+         <li><p>"The Wardrobe has transformed my closet. Stylish and affordable!" - Ananya.</p>
+         </blockquote></li>
+        <blockquote>
+        <li> <p>"Their custom orders are unique and perfectly tailored." - Varun.</p>
+        </blockquote></li>
+        <blockquote>
+         <li><p>"Great quality and customer service. Highly recommended!" - Siya.</p>
+        </blockquote></li></ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us:</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+            <label for="message">Message(Your feedback will be highly valued):</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <label>Preferred Contact Method:</label><br>
+            <input type="radio" id="contactEmail" name="contactMethod" value="Email">
+            <label for="contactEmail">Email</label>
+            <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+            <label for="contactPhone">Phone</label><br><br>
+
+            <label>Whether a first time visitor</label>
+            <input type="checkbox" name="subscribe" value="yes"><br><br>
+
+            <label for="inquiry">Type of Inquiry:</label>
+            <select id="inquiry" name="inquiry">
+                <option value="general">General</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Follow us on social media:</p>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a><br>
+        <p>&copy; 2024 THE WARDROBE. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
